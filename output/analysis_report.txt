@@ -1,0 +1,90 @@
+===== TEMEL GRAF İSTATİSTİKLERİ (TÜM GRAF) =====
+Düğüm (oyuncu) sayısı: 6482
+Kenar (ortak film) sayısı: 27359
+Yoğunluk (density): 0.00130
+Bağlantılı bileşen sayısı: 616
+Analizler en büyük bileşen üzerinden yapılacak: 226 düğüm
+
+Derece dağılımı grafiği kaydedildi: output/degree_distribution.png
+
+===== MERKEZİLİK ANALİZİ =====
+
+--- Degree Centrality (en çok ortak oyuncuya sahip olanlar) (İlk 10) ---
+  Alencier Ley Lopez              0.1200
+  Joju George                     0.1200
+  Manju Warrier                   0.1022
+  Poonam Kaur                     0.0889
+  V. Jayaprakash                  0.0800
+  Mamta Mohandas                  0.0800
+  Balachandran Chullikadu         0.0800
+  Sathyaraj                       0.0800
+  Ashokan                         0.0800
+  Rahul Nair                      0.0800
+
+--- Betweenness Centrality (ağdaki 'köprü' oyuncular) (İlk 10) ---
+  Jagapathi Babu                  0.4095
+  S.J. Suryah                     0.3214
+  Anusree                         0.2778
+  Poonam Kaur                     0.2241
+  Alencier Ley Lopez              0.2186
+  Thambi Ramaiah                  0.2121
+  Surbhi                          0.2064
+  Joju George                     0.2004
+  Prakash Raj                     0.1991
+  V. Jayaprakash                  0.1848
+
+--- Eigenvector Centrality (önemli kişilerle bağlantılı oyuncular) (İlk 10) ---
+  Joju George                     0.3073
+  Dileesh Pothan                  0.1912
+  Anusree                         0.1890
+  Kunchacko Boban                 0.1846
+  Siddique                        0.1740
+  Shine Tom Chacko                0.1633
+  Manju Warrier                   0.1540
+  Jagapathi Babu                  0.1504
+  Saikumar                        0.1487
+  Ashokan                         0.1449
+
+--- Closeness Centrality (ağın merkezine ortalama en yakın olanlar) (İlk 10) ---
+  Jagapathi Babu                  0.3191
+  Poonam Kaur                     0.3008
+  Surbhi                          0.2992
+  Anusree                         0.2945
+  Joju George                     0.2937
+  Prakash Raj                     0.2922
+  Makrand Deshpande               0.2841
+  Janardanan                      0.2768
+  Vineeth Thattil David           0.2768
+  Thennal Abhilash                0.2768
+
+--- PageRank (Google'ın algoritmasıyla 'itibar' skoru) (İlk 10) ---
+  Alencier Ley Lopez              0.0109
+  Joju George                     0.0104
+  Manju Warrier                   0.0102
+  Poonam Kaur                     0.0088
+  Manobala                        0.0081
+  Balachandran Chullikadu         0.0076
+  Rahul Nair                      0.0076
+  Pooja Gandhi                    0.0075
+  Sathyaraj                       0.0075
+  Mayilsamy                       0.0075
+
+Tüm merkezilik skorları CSV olarak kaydedildi: output\centrality_scores.csv
+
+===== EN KISA YOL ÖRNEĞİ =====
+Sharad K.R.G.  -->  Nithya Menen
+Yol uzunluğu: 5 adım
+Sharad K.R.G. -> S.J. Suryah -> Nagineedu -> Poonam Kaur -> Prakash Raj -> Nithya Menen
+
+===== LOUVAIN TOPLULUK TESPİTİ =====
+Bulunan topluluk sayısı: 9
+Modularity skoru: 0.7970  (0.3+ genelde 'anlamlı yapı' sayılır)
+
+En büyük 5 topluluk ve boyutları:
+  Topluluk 8: 35 kişi | örnek üyeler: Ravi Venkatraman, V. Jayaprakash, Rakul Preet Singh, Aadarsh Balakrishna, Sayaji Shinde
+  Topluluk 1: 28 kişi | örnek üyeler: Baburaj, Senthil Krishna, Alencier Ley Lopez, Lydia, Amina Nijam
+  Topluluk 5: 28 kişi | örnek üyeler: Sasha Gopinath, Arjun Nandakumar, Gowri, Mamta Mohandas, Nithya Menen
+  Topluluk 6: 28 kişi | örnek üyeler: Idoh, Meera Nair, Sandhya Jagarlamudi, Prinz Nithik, Sibiraj
+  Topluluk 3: 27 kişi | örnek üyeler: Krishna Kumar, Janardanan, Vinayakan, Gopalan, Praveen Viswanath
+
+Topluluk görselleştirmesi kaydedildi: output\communities.png

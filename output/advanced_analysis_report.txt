@@ -1,0 +1,65 @@
+İleri analizler en büyük bileşen üzerinden yapılıyor: 226 düğüm, 1097 kenar
+
+===== KÜMELENME KATSAYISI (CLUSTERING) =====
+Ortalama yerel kümelenme katsayısı: 0.4622
+Global kümelenme katsayısı (transitivity): 0.7568
+Yorum: 1'e yakın değer, bir oyuncunun film arkadaşlarının da
+birbirini büyük ihtimalle tanıdığı (aynı kadroda oynadığı) anlamına gelir.
+Film ağlarında bu genelde yüksek çıkar çünkü bir filmin tüm kadrosu
+otomatik olarak birbirine bağlanır (klik/clique oluşur).
+
+===== ÇAP VE ORTALAMA EN KISA YOL =====
+Çap (diameter): 11 adım
+Ortalama en kısa yol uzunluğu: 4.93 adım
+Yorum: Küçük bir çap, ağın 'küçük dünya' (small-world) özelliği
+taşıdığının işaretidir - herkes birkaç adımda birbirine ulaşabiliyor demektir.
+
+===== DERECE ASORTATİVİTESİ =====
+Asortativite katsayısı: -0.0222
+Sıfıra yakın: Belirgin bir eğilim yok, bağlantılar rastgele gibi dağılmış.
+
+===== KESME NOKTALARI (ARTICULATION POINTS) =====
+Toplam kesme noktası sayısı: 13
+Bu oyuncular çıkarılırsa ağ birden fazla parçaya bölünür:
+  - Pooja Gandhi
+  - Makrand Deshpande
+  - Balachandran Chullikadu
+  - Lal
+  - Sathyaraj
+  - Arundhathi
+  - Mayilsamy
+  - Manobala
+  - Thambi Ramaiah
+  - S.J. Suryah
+  - Alencier Ley Lopez
+  - Rahul Nair
+  - Manju Warrier
+
+===== AĞ DAYANIKLILIK (ROBUSTNESS) TESTİ =====
+En merkezi (betweenness) oyuncuları sırayla çıkarınca ağın en büyük
+parçası ne kadar küçülüyor? Rastgele çıkarmayla karşılaştırılıyor.
+
+Grafik kaydedildi: output\robustness_test.png
+Yorum: Eğer kırmızı çizgi maviden çok daha hızlı düşüyorsa, ağ
+'hedefli saldırılara karşı kırılgan ama rastgele arızalara dayanıklı'
+demektir - gerçek dünya sosyal ağlarında (ve çoğu scale-free ağda)
+tipik olarak görülen bir davranıştır.
+
+===== EN MERKEZİ OYUNCUNUN EGO AĞI =====
+En yüksek degree centrality'ye sahip oyuncu: Joju George
+Ego ağı boyutu: 28 düğüm, 136 kenar
+Ego ağı görseli kaydedildi: output\ego_network.png
+
+===== LINK PREDICTION (BASİT ÖNERİ SİSTEMİ) =====
+Henüz birlikte oynamamış ama çok sayıda ortak film arkadaşı olan
+oyuncu çiftleri (gelecekte birlikte çalışması 'beklenebilecek' isimler):
+  Narsing Yadav             <-> Vennela Kishore             ortak bağlantı: 3
+  Tejaswini Lonari          <-> Surbhi                      ortak bağlantı: 3
+  Siddique                  <-> Shine Tom Chacko            ortak bağlantı: 3
+  Aadarsh Balakrishna       <-> Surbhi                      ortak bağlantı: 3
+  Surbhi                    <-> Nandu Vijay Krishna         ortak bağlantı: 3
+  Surbhi                    <-> Nani                        ortak bağlantı: 3
+  Surbhi                    <-> Bhupal                      ortak bağlantı: 3
+  Surbhi                    <-> Shraddha Das                ortak bağlantı: 3
+  Surbhi                    <-> Allari Naresh               ortak bağlantı: 3
+  Poonam Kaur               <-> V. Jayaprakash              ortak bağlantı: 3

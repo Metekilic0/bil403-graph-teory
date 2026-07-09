@@ -1,0 +1,52 @@
+Yapısal analizler en büyük bileşen üzerinden yapılıyor: 226 düğüm, 1097 kenar
+
+===== KÜÇÜK-DÜNYA (SMALL-WORLD) TESTİ =====
+Ağ, aynı düğüm/kenar sayısına sahip rastgele graflarla karşılaştırılıyor...
+Gerçek ağ  -> kümelenme: 0.7568  |  ort. yol uzunluğu: 4.9324
+Rastgele ağ (ort. 15 deneme) -> kümelenme: 0.0413  |  ort. yol uzunluğu: 2.6239
+
+Sigma (σ) = 9.737
+YORUM: σ > 1, ağ KÜÇÜK-DÜNYA özelliği taşıyor. Yani oyuncular,
+aynı büyüklükteki rastgele bir ağa göre çok daha 'kümelenmiş'
+gruplar halinde ama yine de birbirine şaşırtıcı derecede az adımda ulaşabiliyor.
+
+===== KLİK (CLIQUE) ANALİZİ =====
+Toplam maksimal klik sayısı: 32
+En büyük klik boyutu: 10 kişi
+
+En büyük 5 klik:
+  1. (10 kişi) Mohanlal, Joju George, Anoop Chandran, Shafeer Khan, Siddique, Biju Menon, Shivaji Guruvayoor, Amala Paul, Saikumar, Krishna Kumar
+  2. (10 kişi) Veera Ravi Kumar Yalla, Bharath Srinivasan, Rakul Preet Singh, S.J. Suryah, Mahesh Babu, Nagineedu, V. Jayaprakash, Priyadarshi Pulikonda, Sayaji Shinde, RJ Balaji
+  3. (10 kişi) Mammootty, Balachandran Chullikadu, Madhu, Pooja Batra, Resmi Boban, Johny, Johnnie, Lalu Alex, Bharathi, Harisree Ashokan
+  4. (10 kişi) Sona Nair, Dinesh Panicker, Indrans, Joy Mathew, Jasnya Jayadeesh, Siddique, Prayaga Martin, Ashokan, Mithun Ramesh, Mallika Sukumaran
+  5. (10 kişi) Jinu Joseph, Sudheer Karamana, Molly Kannamaly, Sampath Raj, Mamta Mohandas, Prakash Raj, Lal, Prithviraj Sukumaran, Nithya Menen, Assim Jamal
+
+Klik boyutu dağılımı grafiği kaydedildi: output\clique_distribution.png
+Yorum: Film ağlarında her klik genelde tek bir filmin (veya üst üste
+aynı kadroyla çekilmiş birkaç filmin) oyuncularına karşılık gelir,
+çünkü bir filmin kadrosundaki herkes birbirine otomatik bağlanır.
+
+===== K-CORE AYRIŞTIRMASI =====
+Maksimum k-core değeri: 9
+Ana çekirdek (main core) boyutu: 190 oyuncu
+Ana çekirdek üyeleri (ağın en 'sıkı bağlı' grubu):
+  - Mohanlal  (k-core: 9)
+  - Veera Ravi Kumar Yalla  (k-core: 9)
+  - RJ Balaji  (k-core: 9)
+  - Chali Pala  (k-core: 9)
+  - Mammootty  (k-core: 9)
+  - Akhila Anoki  (k-core: 9)
+  - Sona Nair  (k-core: 9)
+  - Jinu Joseph  (k-core: 9)
+  - Nandu Vijay Krishna  (k-core: 9)
+  - Shafeer Khan  (k-core: 9)
+  - Sayaji Shinde  (k-core: 9)
+  - Charlie  (k-core: 9)
+  - Amala Paul  (k-core: 9)
+  - Sandhya Jagarlamudi  (k-core: 9)
+  - Deepa Iyer  (k-core: 9)
+
+K-core görselleştirmesi kaydedildi: output\k_core.png
+Yorum: Ana çekirdekteki oyuncular, ağın geri kalanına göre çok daha
+yoğun bir şekilde birbirine bağlı - bu genelde birden fazla ortak
+filmde tekrar tekrar bir araya gelen küçük bir 'çekirdek kadro'yu işaret eder.

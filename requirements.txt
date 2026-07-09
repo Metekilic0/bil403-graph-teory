@@ -1,0 +1,7 @@
+pandas
+networkx
+matplotlib
+python-louvain
+numpy
+pytest
+jupyter
