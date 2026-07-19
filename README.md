@@ -37,7 +37,7 @@ karşılaştırması.
 ├── structural_analysis.py        # Yapısal analizler (small-world, clique, k-core)
 ├── compare_genres.py             # Çoklu tür karşılaştırması
 ├── bipartite_analysis.py         # Bipartite graf + projeksiyon doğrulaması
-├── BIL403_donem_projesi.ipynb    # Tüm analizleri birleştiren Jupyter notebook
+├── projekod_231401028_Mete_Kilic.ipynb   # Tüm analizleri birleştiren Jupyter notebook
 ├── tests/
 │   ├── test_graph_utils.py
 │   ├── test_build_graph.py
@@ -141,7 +141,7 @@ pytest tests/ -v
 ### 8. Notebook
 
 ```bash
-jupyter notebook BIL403_donem_projesi.ipynb
+jupyter notebook projekod_231401028_Mete_Kilic.ipynb
 ```
 
 Notebook, yukarıdaki tüm script'lerle aynı `build_graph.py` ve
